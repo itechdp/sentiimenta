@@ -1,0 +1,134 @@
+/* Base styles */
+.our-projects {
+  background-color: black;
+  color: white;
+  width: 80%;
+  padding: 100px 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.our-projects h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.project-card p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-link:hover {
+  background-color: darkred;
+}
+
+/* Responsive styles */
+
+/* Large desktops */
+@media screen and (min-width: 1200px) {
+  .our-projects {
+    width: 80%;
+  }
+
+  .project-card {
+    width: 300px; /* Default width */
+  }
+}
+
+/* Medium desktops and large tablets */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  .our-projects {
+    width: 85%;
+    padding: 90px 7%; /* Adjust padding for medium desktops */
+  }
+
+  .project-card {
+    width: 300px; /* Maintain default width */
+  }
+}
+
+/* Tablets and smaller desktops */
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .our-projects {
+    width: 90%; /* Adjust width for better spacing */
+    padding: 80px 5%; /* Adjust padding for tablets */
+  }
+
+  .project-card {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+/* Large phones and small tablets */
+@media screen and (max-width: 767px) and (min-width: 684px) {
+  .our-projects {
+    width: 110%; /* Almost full width */
+    padding: 60px 5%; /* Adjust padding */
+  }
+
+  .project-card {
+    width: 100%; /* Full width for each project */
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 683px) and (min-width: 480px) {
+  .our-projects {
+    width: 110%; /* Full width */
+    padding: 40px 2%; /* Adjust padding */
+  }
+
+  .project-card {
+    width: 100%; /* Full width for each project */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+/* Extra small phones */
+@media screen and (max-width: 479px) {
+  .our-projects {
+    width: 116%; /* Full width */
+    margin: 0;
+  }
+
+  .project-card {
+    width: 100%; /* Full width for each project */
+    padding: 5px; /* Further reduce padding */
+  }
+}
