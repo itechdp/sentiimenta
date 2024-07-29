@@ -29,7 +29,7 @@ const Contact = () => {
 
       
       <div className="social-copyright">
-          © 2024 SenttllmentaAI. All Rights Reserved
+          © 2024 Senttllmenta AI. All Rights Reserved
       </div>
     </div>
   );
